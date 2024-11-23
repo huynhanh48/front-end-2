@@ -353,130 +353,111 @@ a{
 .popular .btn.control-product:hover{
     background: var(--first-btn);
 }
-/*------------------rate------------------ */
-.rate.rate-content{
-    width: 100vw;
-    background: #2E2100;
-}
-.rate .body{
+/*------------------feedback------------------ */
+.feedback{
+    margin-top: 200px;
     padding: 96px 0;
     background: #2E2100;
 }
-.dots{
+.feedback .feedback-list .feedback-item{
     display: flex;
-    gap: 6px;
 }
-.rate .body{
-    display: flex;
-    justify-content: space-between;
-}
-.rate .avatar{
+.feedback .avatar{
     width: 72px;
     height: 72px;
-    border-radius: 999px;
+    border-radius: 50%;
     margin-bottom: 18px;
-}
-.rate  .title.title-avatar{
+} 
+.feedback .title{
     font-family: var(--second-font);
     font-size: 2.4rem;
     font-weight: 700;
-    line-height: 34px;
+    line-height: 1.4;
     color: #fff;
-
 }
-.rate .info{
-    position: relative;
-    width: calc(62%);
-}
-.rate.rate-content .desc{
+.feedback .desc{
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 28px;
+    line-height: 1.5;
+    color: #BFBCB2;
 }
-.rate .dot{
+.feedback .dot{
+    display: inline-block;
     width: 6px;
     height: 6px;
-    border-radius: 999px;
-    background: #634700;
+    background-color: #634700;
+    border-radius: 50%;
 }
-.rate .dots .normal{
-    background-color: #FFB900;
+.feedback .dots .active{
+    background: #FFB900;
 }
-.rate blockquote{
-font-size: 2.6rem;
-font-style: italic;
-font-weight: 400;
-line-height: 1.5;
-color: #fff;
-margin-top: 28px;
-margin-left: 30px;
-
-display: -webkit-box;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-overflow: hidden;
+.feedback .info{
+    margin-left: auto;
+    width: 64%;
 }
-.rate .info img{
-    position: absolute;
-    left: 0;
-    top: 0;
+.feedback blockquote{
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 28px;
 }
-.rate .list{
+.feedback .feedback-list{
     display: flex;
     overflow: hidden;
 }
-.rate .item{
-    flex: 0 0 auto;
+.feedback .feedback-item{
     width: 100%;
-    transition: transform 0.3s ease; 
-    transform: translateX(-100%); 
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-100%);
 }
 /*------------------featured------------------ */
-.featured {
+.featured{
     margin-top: 200px;
-    width: 100vw;
+    padding-bottom: 60px;
 }
-.featured .body{
+.featured .content{
     display: flex;
 }
-.featured .thumb{
-    display: flex;
-    gap: 0 30px;
-    width: 50%;
-}
-.featured .thumb img{
+.featured .images{
     width: 270px;
     height: 404px;
     border-radius: 16px;
 }
-.featured .thumb img:first-child{
+.featured .images:first-child{
     margin-top: 34px;
 }
+.featured .thumb {
+    gap: 30px;
+    display: flex;
+}
+.featured .info  .title{
+    font-family: var(--second-font);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+
+}
+.featured .info .desc{
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 28px;
+}
 .featured .info{
-    width: 41%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 16px 0;
-    margin-left: 130px;
+    margin-left:130px;
 }
-.featured .title{
-    font-family: var(--second-font);
-    font-size: 3.6rem;
-    font-weight: 700;
-    line-height: 1.5;
-}
-.featured .info .desc{
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 28px;
-}
-.featured .info .btn{
-    margin-top: 16px;
+.featured a.btn{
+    margin-top: 43px;
     width: 137px;
 }
-.featured .info .btn:hover{
+.featured a.btn:hover{
     background: var(--first-btn);
 }
