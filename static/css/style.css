@@ -461,3 +461,202 @@ line-height: 28px;
 .featured a.btn:hover{
     background: var(--first-btn);
 }
+/*------------------featured second------------------ */
+.featured.second .content{
+    flex-direction: row-reverse;
+}
+.featured.second  .info{
+}
+.featured.second .images{
+    width: 400px;
+    height: 440px;
+}
+/*------------------blog------------------ */
+.blog{
+    margin-top: 140px;
+}
+.blog .content{
+    padding-top: 46px;
+    background-color: var(--primary-color);
+    padding-bottom: 96px;
+
+}
+.blog .title{
+    font-family: --second-font;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+}
+.blog .info>.desc{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 448px;
+    margin: 16px auto;
+}
+.blog .images{
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom:8px ;
+}
+.blog .blog-list{
+    width: 100%;
+    gap: 30px;
+    margin-top: 39px;
+    display: flex;
+    overflow: hidden;
+}
+.blog .blog-item{
+    width: calc((100% - 60px) / 3);
+    flex-shrink: 0;
+    transition: all .3s ease;
+    transform: translateX(calc(-100% - 30px)); 
+    /* container  100% / 3 => 3 item  for  one item  is 30 px right-left  2*30 = 60px  => 100% - 60  / 3  => item kind  */
+ }
+.blog-item .desc{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 12px 10px;
+}
+.blog-item .desc::before{
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--first-btn);
+}
+.blog-item .desc::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -27px;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background-color: #E2DFDA;
+}
+.blog-item .desc-strong{
+    display: block;
+    margin: 12px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.blog .btn{
+    width: 118px;
+    margin-bottom: 28px;
+}
+.blog .dots{
+    margin-top: 36px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+.blog .btn:hover{
+    background: var(--first-btn);
+}
+.blog .dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5F5B53;
+    cursor: pointer;
+}
+.blog .dots .active{
+    background: #FFB900;
+    cursor: default;
+}
+/*------------------footer------------------ */
+footer{
+    background-color: #2E2100;
+}
+footer .content{
+    display: flex;
+    flex-wrap: wrap;
+    background: #2E2100;
+    padding-bottom: 50px;
+}
+footer .column{
+    padding: 96px 0 0;
+    width: calc(100% / 4);
+}
+footer  .title{
+    
+    position: relative;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 14px;
+}
+footer  .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 130px;
+    height: 1px;
+    background: #59554B;
+}
+footer .column .title.first::before{
+    content: none;
+}
+footer .column .title.first .dot.second{
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    background: var(--first-btn);
+    border-radius: 50%;
+}
+footer .column:first-child .desc{
+    width: 267px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+footer .desc{
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+footer .column strong{
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+footer .column a.email-box{
+    color: #BFBCB2;
+}
+footer .social{
+    padding: 18px 0;
+    display: flex;
+    gap: 18px;
+}
+footer .separate{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background: #59554B;
+    margin: 28px 0;
+}
+footer .separate::after{
+    content: "Copyright ©2022 webdesign.gdn All rights reserved";
+    color: #807D74;
+    margin-top: 28px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 auto;
+    padding:28px 0 ;
+}
